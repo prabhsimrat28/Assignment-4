@@ -1,2 +1,3 @@
 # Assignment-4
-Assignment 4
+In this assignment, I transformed the NO₂ data using a nonlinear function based on my roll number to create a more complex random variable z. Since the analytical form of its distribution was unknown, I trained a simple fully connected GAN to learn the distribution directly from the samples of z.
+The generator learned to produce fake samples from Gaussian noise, while the discriminator tried to distinguish them from real data. After training, I generated many synthetic samples and estimated the probability density using histogram and KDE, verifying that the GAN successfully captured the overall shape and modes of the true distribution without assuming any parametric form.
